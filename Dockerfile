@@ -16,3 +16,6 @@ RUN sleep 31                                                                    
  && cd ..                                                                               \
  && rm -rf       /tmp/util-macros
 
+FROM scratch as final
+COPY --from=builder-01 /tmp/util-macros.txz /tmp/
+
