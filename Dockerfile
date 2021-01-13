@@ -12,7 +12,7 @@ RUN sleep 31                                                                    
  && rm -rf                                                                   macros     \
  && cd           /tmp/util-macros                                                       \
  && strip.sh .                                                                          \
- && tar acf    ../util-macros.txz .                                                     \
+ && tar  pacf    ../util-macros.txz .                                                     \
  && cd ..                                                                               \
  && rm -rf       /tmp/util-macros
 
